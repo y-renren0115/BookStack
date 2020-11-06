@@ -71,4 +71,12 @@
   resources :books
   resources :users
 
-
+# topic5: 各views・controller・modelの詳細設定
+## views
+ +
+ 
+## controller
+ +
+ 
+## model
+ +

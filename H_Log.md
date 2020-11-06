@@ -58,3 +58,5 @@ devise_for :users
   resources :users
 
 ~topic4実装完了！~
+
+~topic5: views・contoroller・modelの詳細設定~
