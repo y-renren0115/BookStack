@@ -42,3 +42,5 @@
 - books_controller.rb
 - users_controller.rb
 - top_controller.rb
+
+# topic4: 各viewsとルーティングの設定実装
