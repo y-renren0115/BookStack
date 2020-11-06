@@ -42,3 +42,33 @@
 - books_controller.rb
 - users_controller.rb
 - top_controller.rb
+
+# topic4: 各viewsとルーティングの設定実装
+~views~
+## 各viewファイルの作成&用意
+ books
+ + _form.html.erb
+ + edit.html.erb
+ + index.html.erb
+ + show.html.erb
+ 
+ users
+ + _info.html.erb
+ + edit.html.erb
+ + index.html.erb
+ + show.html.erb
+ 
+ tops
+ + top.html.erb
+ + about.html.erb
+ - 上のビュフーファイルをそれぞれ追加した！
+
+## 各ビューファイルのルーティング設定！
+~routes.rb~
+  devise_for :users
+  root 'tops#top'
+  get '/tops/about' => 'tops#about'
+  resources :books
+  resources :users
+
+
