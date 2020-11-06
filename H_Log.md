@@ -50,3 +50,11 @@
 ## ここで各ビューページとルーティン周りの実装に関してtopic4を切って開発を進める！
 + git checkout -b topic4
 + git add - commit - pushにてリモートにも内容を反映させる！！
+~routes.rb~
+devise_for :users
+  root 'tops#top'
+  get '/tops/about' => 'tops#about'
+  resources :books
+  resources :users
+
+~topic4実装完了！~
