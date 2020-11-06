@@ -77,3 +77,5 @@ devise_for :users
  + 各viewfileでとりあえずのhtml/css/bootstrapによるレイアウトデザインが完了した！
  
 ~topic5実装完了！~
+
+~topic6: フロント部分の変更やその他不具合の修正~
