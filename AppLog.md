@@ -37,3 +37,8 @@
 + t.string :email
 + t.string :encrypted_password
 + t.string :nickname(within: 6chara)
+
+# topic3: BookStackで必要なコントローラーの作成
+- books_controller.rb
+- users_controller.rb
+- top_controller.rb

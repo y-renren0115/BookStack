@@ -36,4 +36,12 @@
 ~topic3: 各contorollerの実装~
 ## ここでコントローラー周りの実装をtopic3ブランチを切って作成することとする！
 + git checkout -b topic3
-+ (topic3) git add - commit - push
++ (topic3) git add - commit - push でリモートにtopic3を反映させた！
+
+### 各コントローラーの作成&用意
+  + rails g model books
+  + rails g controller users
+  + rails g controller tops
+　- 上のコマンドでそれぞれ作成した！
+
+## ここで各コントローラーの作成&導入が完了したのでここで,リモートに反映させる！
