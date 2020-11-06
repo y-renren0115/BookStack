@@ -77,5 +77,25 @@ devise_for :users
  + 各viewfileでとりあえずのhtml/css/bootstrapによるレイアウトデザインが完了した！
  
 ~topic5実装完了！~
-
+ 
 ~topic6: フロント部分の変更やその他不具合の修正~
+# views
+ + application.html.erbにヘッダーナビゲーションの追加,ブラッシュアップ。
+ + top.html.erb,application.html.erbのレイアウト崩れの修正。
+ (⭐️⭐️) ログイン前の画面でも投稿された本 = books#indexのみは閲覧できるようにしておく！ 
+ → この機能は最後の方にとっておくこととする。
+ 
+ + deviseのsign in,sign up画面をもう少しレイアウトを整える！
+ + あ,今の今までdeviseのviewを用意するのを忘れてた！
+ (⭐️)Sign In,Sign Up画面のレイアウト設定完了！！(18:02)
+
+ ## 現在11/06 18:45分時点 ログイン後の画面もエラーなく表示されている！あとはCRUDなどの機能を検証して、エラーが出ないか？,画像投稿やルーティングなどが
+                          正いか?などを検証・実装していく！
+
+# controllers
+
+# models
+
+# tables
+
+〜11/07 8:55 作業開始！〜
