@@ -58,3 +58,22 @@ devise_for :users
   resources :users
 
 ~topic4実装完了！~
+
+~topic5: views・contoroller・modelの詳細設定~
+# contoroller
+ - books
+ - users
+ - tops
+ -コントローラーの各アクション・処理内容を実装して行った！ - 詳細は各controller参照
+ + contorollerの各カラム名だけエラーが出ないように変更しておく。
+
+# model
+ - book.rb
+ - user.rb
+ + rails g migration add_introduces_to_users introduces:text
+ + rails g migration add_user_image_id_to_users user_image_id:string
+ 
+# views
+ + 各viewfileでとりあえずのhtml/css/bootstrapによるレイアウトデザインが完了した！
+ 
+~topic5実装完了！~

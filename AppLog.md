@@ -71,4 +71,16 @@
   resources :books
   resources :users
 
+# topic5: 各views・controller・modelの詳細設定
+## views
+ + 各viweページの大まかなレイアウト作成
+ + bootstrapを使うための設定(application.scss,application.jsを変更) 
 
+## controller
+ + 各controllerのアクション・処理内容の実装
+ + 
+ 
+## model・テーブル
+ + バリデーションやアソシエーションの実装
+ + usersテーブルに自己紹介文を簡単に記述するためのカラム :introducesを追加
+ + 画像保存用のカラム user_image_idを追加
