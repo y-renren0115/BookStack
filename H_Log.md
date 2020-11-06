@@ -27,3 +27,13 @@
 
 ## ここで,BookStacksにおけるモデルの実装&導入は終了したからここでGithubでチーム開発一連の流れをやる！
 
+ 手順: topicで機能追加 → topicの作業内容をリモートに反映 → Githubでプルリク・マージでdevelopに内容を結合
+  → developに正しくマージされたかInsightのNetworkで確認 → ローカルでdevelopブランチに移動 → リモートdevelopの内容を"Pull"
+  → ローカルdevelopに正しくpullできていたら,topic2に移動して同じくdevelop(統合ブランチ)からpull → 一連の流れ完了！
+  
+## 上のdevelop ← topic2のプルリク・マージが完了した！そして,リモートからのpullも完了して、コンフリクトや不具合も全くない！
+
+~topic3: 各contorollerの実装~
+## ここでコントローラー周りの実装をtopic3ブランチを切って作成することとする！
++ git checkout -b topic3
++ (topic3) git add - commit - push
