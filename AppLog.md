@@ -101,3 +101,5 @@
  + like.rb
    - t.integer "user_id"
    - t.integer "book_id"
+
+# topic8: README.mdの編集・その他ブラッシュアップ
