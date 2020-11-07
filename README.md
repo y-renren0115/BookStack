@@ -1,6 +1,6 @@
 # [BookStack](https://immense-taiga-22474.herokuapp.com/ "BookStack")
 
-### [アプリURL:](https://immense-taiga-22474.herokuapp.com/)
+### アプリURL:[https://immense-taiga-22474.herokuapp.com/](https://immense-taiga-22474.herokuapp.com/)
 
 ### サインイン・サインアップ方法
 - サインアップ画面から自分のニックネーム,Eメール,パスワードを設定していただくことでご利用になれます！
