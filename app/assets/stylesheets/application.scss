@@ -15,3 +15,64 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+header{
+	color:white;
+	.navbar-left{
+		span{
+			font-size:20px;
+			padding-top:10px;
+		}
+	}	
+}
+
+.body{
+	margin-top:53px;
+}
+//application.html.erb
+.header {
+	height: 75px;
+}
+.navbar-right{
+	padding-top: 13px;
+}
+.app-title {
+	font-size: 30px;
+	line-height: 25px;
+}
+
+// ~top.html.erb~
+.main-title {
+	font-size: 50px;
+	margin-top: 150px;
+	text-align: center;
+}
+.sub-title {
+	text-align: center;
+	margin-top: 35px;
+}
+.log-in-btn {
+	margin-top: 50px;
+}
+.sign-up-btn {
+ margin-top: 15px;
+}
+
+// ~footer~
+.copy {
+	width: 350px;
+	margin-top: 230px;
+	text-align: center;
+}
