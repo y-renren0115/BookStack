@@ -1,24 +1,31 @@
-# README
+# BookStack
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### アプリURL: 
 
-Things you may want to cover:
+### サインイン・サインアップ方法
+- サインアップ画面から自分のニックネーム,Eメール,パスワードを設定していただくことでご利用になれます！
+- サインアップ以降はサインイン画面からニックネームとパスワードを入力していただくことで利用できます！
 
-* Ruby version
+### アプリ概要
+- 本好きの人が自分のおすすめな本を投稿することで,他のユーザーにその本の良さをアピールすることができます！
+- また、投稿した本には他のユーザーがいいねやコメントすることができるので,本好きな人同士でお互いのとっておきの
+  本を紹介しあったり,書評などを共有することでより充実した読書ライフを送るおことができます！
 
-* System dependencies
+### 使用技術
+- フロントエンド(HTML/CSS,bootstrap,scss)
+- バックエンド(Ruby 2.6.3, Rails 5.2.4.4)
+- インフラ(Heroku)
+- DB(sqlite)
 
-* Configuration
+### 機能一覧
+- ユーザーの情報登録機能
+- 本の投稿・一覧・編集・削除機能
+- 本の投稿に対するいいね機能
+- 本の投稿に対するコメント機能
 
-* Database creation
+### 機能詳細
+- ユーザー登録にgem deviseを使用
+- ユーザー画像登録にgem refile,refile-mini_magickを使用
+- bootstrapの読み込みにgem bootstrap-sassを使用
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
