@@ -1,6 +1,7 @@
 <div class ="edit-container"> 
   <h2 class ="edit-title">Your Info</h2>
-
+  <%= render 'books/errors', error: @user %>
+  
     <%= form_for(@user) do |f| %>
     
     <div class="field">

@@ -13,7 +13,9 @@
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="header container">
         <nav class='nav navbar-nav navbar-left' >
+        <%= link_to books_path, method: :get do %>
           <h1 class ="app-title"><span class='glyphicon glyphicon-book'>BookStack</h1>
+        <% end %>
         </nav>
         <nav>
           <ul class="nav navbar-nav navbar-right">
@@ -24,7 +26,6 @@
               <li><%= link_to ' SIGNOUT', destroy_user_session_path, method: :delete,class: 'glyphicon glyphicon-log-out logout' %></li>
             <% else %>
               <li><%= link_to ' TOP',root_path,class: 'glyphicon glyphicon-home home' %></li>
-              <!--<li><!%= link_to ' STACKS', books_path, class: 'glyphicon glyphicon-align-justify' %></li>-->
               <li><%= link_to ' Sign Up', new_user_registration_path,class: 'glyphicon glyphicon-edit sign_up' %></li>
               <li><%= link_to ' Sign In', new_user_session_path ,class: 'glyphicon glyphicon-log-in sign_in'%></li>
             <% end %>
@@ -46,7 +47,7 @@
       <div class='container'>
   	    <div class='row'>
     	    <div class='col-xs-3 col-xs-offset-4'>
-    	    	<p class ="copy">CopyRight ©︎2020 Ren Yoshizawa All Rights Reserved.</p>
+    	    	<p class ="copy">CopyRight ©︎ 2020 Ren Yoshizawa All Rights Reserved.</p>
     	    </div>
         </div>
       </div>
