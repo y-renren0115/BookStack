@@ -86,3 +86,16 @@
  + 画像保存用のカラム user_image_idを追加
 
 # topic6: 各viewsのレイアウト変更、その他仕様変更等
+
+#topi7: 他のユーザーが投稿した本へのコメント・いいねする機能を実装
+
+## controller
+ + comment_controller
+ + like_controller
+
+## model
+ + comment.rb
+   -
+ + like.rb
+   - t.integer "user_id"
+   - t.integer "book_id"

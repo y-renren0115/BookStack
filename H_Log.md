@@ -118,3 +118,38 @@ devise_for :users
   + 10:25 Nicknameとpassでログインできる使用に変更完了！
 
 ~topic6 以上の変更を持ってtopic6の変更を終了する！~
+
+
+~topic7: コメント機能・いいね機能の実装~
+# 1.コメント機能の実装
+# 2.いいね機能の実装
+
+## 10:55~ コメント機能実装取り掛かる！
+~イメージは、books#index - 本のタイトルをクリックすることでbooks#show - コメント入力&送信 - 各ビューページに反映~
++ comment modelを作成 - rails g model comment
++ commentテーブルのスキーマを以下のように編集してマイグレートする。
+　- t.integer "user_id"
+  - t.integer "book_id"
+  - t.string "comment"
+ + migrate完了！
+
++ 続いて,comments_controllerを作成 - rails g controller comments
++ comments_controllerの中身を追記した。
++ 続いて,comment modelの詳細設定として,アソシエーションとバリデーションを設定した。
++ 続いて各ビューファイルの内容を変更する！ - いや,各viewファイルのレイアウト編集はlike_controllerまで作成した後に行おう！
+~view以外のcomment機能実装完了！~
+
+## 11:20~ いいね機能実装に取り掛かる！
++ like modelを作成 -rails g model like
++ likeテーブルのスキーマを以下のように変更し,マイグレートする。
+ - t.integer "user_id"
+ - t.integer "book_id"
++ migrate完了！
++ 続いて,likes_controllerを作成 - rails g controller likes
++ 続いて,like modelの詳細設定として,アソシエーションとバリデーションを追加した。
+~view以外のlike機能実装完了！~
+
+## 11:39~ コメント・いいね機能追加に伴う,ルーティング/viewの変更開始！
++ まず,ルーティングについてbooksがcommentとlikeをネストするような形に変更する！ - routes.rbにおいて設定完了！
++ ここで,views以外のコメント・いいね機能がだいぶ揃ってきたからリモートにプッシュする - git push
+
