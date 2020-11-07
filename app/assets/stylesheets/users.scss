@@ -1,0 +1,61 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//devise/sign up
+.regist-container {
+  margin-top: 100px;
+  text-align: center;
+}
+.sign-up-title {
+  font-size: 50px;
+}
+.field {
+  margin-top: 25px;
+  font-size: 15px;
+}
+.actions {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+//devise/sign in
+.session-container {
+  margin-top: 100px;
+  text-align: center;
+}
+.sign-in-title {
+  font-size: 50px;
+}
+.field {
+  margin-top: 25px;
+  font-size: 15px;
+}
+.actions {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+// users#show
+.edit-container {
+  margin-top: 100px;
+  text-align: center;
+}
+.edit-title {
+  font-size: 50px;
+}
+.field {
+  margin-top: 30px;
+  font-size: 15px;
+  text-align: center;
+}
+.user_image {
+  margin: 0 auto;
+}
+.actions {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}

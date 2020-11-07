@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+header{
+	color:white;
+	.navbar-left{
+		span{
+			font-size:20px;
+			padding-top:10px;
+		}
+	}	
+}
+
+.body{
+	margin-top:53px;
+}
+//application.html.erb
+.header {
+	height: 75px;
+}
+.navbar-right{
+	padding-top: 13px;
+}
+.app-title {
+	color: white;
+	font-size: 30px;
+	line-height: 25px;
+}
+
+// ~top.html.erb~
+.main-title {
+	font-size: 50px;
+	margin-top: 150px;
+	text-align: center;
+}
+.sub-title {
+	text-align: center;
+	margin-top: 35px;
+}
+.log-in-btn {
+	margin-top: 50px;
+}
+.sign-up-btn {
+ margin-top: 30px;
+}
+
+// ~footer~
+.copy {
+	width: 350px;
+	margin-top: 230px;
+	text-align: center;
+}
