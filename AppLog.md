@@ -90,12 +90,14 @@
 #topi7: 他のユーザーが投稿した本へのコメント・いいねする機能を実装
 
 ## controller
- + comment_controller
- + like_controller
+ + comments_controller
+ + likes_controller
 
 ## model
  + comment.rb
-   -
+   - t.integer "user_id"
+   - t.integer "book_id"
+   - t.string "comment"
  + like.rb
    - t.integer "user_id"
    - t.integer "book_id"
