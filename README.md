@@ -47,6 +47,5 @@
 ## ER図
 ### ![ER図](/app/assets/images/ER1.png)
 
-## ワイヤーフレーム
 
 
