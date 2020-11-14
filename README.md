@@ -45,7 +45,7 @@
 - bootstrapの読み込みにgem bootstrap-sassを使用
 
 ## ER図
-### ![ER図](/assets/images/ER1.png)
+### ![ER図](/app/assets/images/ER1.png)
 
 ## ワイヤーフレーム
 
