@@ -1,5 +1,5 @@
 # [BookStack](https://immense-taiga-22474.herokuapp.com/ "BookStack")
-### ![Bookstack](/images/bookstack.png)
+### ![Bookstack](/app/assets/images/bookstack.png)
 ### アプリURL:[https://immense-taiga-22474.herokuapp.com/](https://immense-taiga-22474.herokuapp.com/)
 
 ### サインイン・サインアップ方法
