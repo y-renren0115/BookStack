@@ -5,6 +5,7 @@ class Book < ApplicationRecord
   
   validates :title, presence: true
   validates :contents, presence: true, length: {maximum: 200}
+  
   def favorited_by?(user)
     likes.where(user_id: user.id).exists?
   end

@@ -14,5 +14,4 @@ class LikesController < ApplicationController
     like.destroy
     redirect_to request.referer
   end
-  
 end
