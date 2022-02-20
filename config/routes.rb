@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'tops#top'
+  get 'search' => 'searches#search'
   
   resources :users do
     resources :relationships, only: [:create, :destroy]
