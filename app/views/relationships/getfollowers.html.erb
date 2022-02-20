@@ -1,0 +1,23 @@
+<h2>Follower Users</h2>
+<% if @users.exists? %>
+  <div class='col-xs-9'>
+    <table class='table'>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Nickname</th>
+          <th></th>
+          <th></th>
+          <th>UserInfo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.each do |user| %>
+          <%= render partial: 'getrelationships', locals: {user:user} %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+<% else %>
+  <h2>ユーザーはいません</h2>
+<% end %>
