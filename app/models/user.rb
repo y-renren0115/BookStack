@@ -29,6 +29,21 @@ class User < ApplicationRecord
   def following?(user)
     self.followings.include?(user)
   end
+  
+  # 検索機能メソッド
+  def self.seeks(word, search)
+    if search == "1"
+      @user = User.where("nickname like?", "#{word}")
+    elsif search == "2"
+      @user = User.where("nickname like?", "#{word}%")
+    elsif search == "3"
+      @user = User.where("nickname like?", "%#{word}")
+    elsif search == "4"
+      @user = User.where("nickname like?", "%#{word}%")
+    else
+      @user = User.all
+    end
+  end
                         
   attachment :user_image
   validates :nickname, presence: true, length: {maximum: 6, minimum: 2}
