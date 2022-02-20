@@ -142,7 +142,11 @@ GEM
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+<<<<<<< HEAD
     pg (1.3.2)
+=======
+    pg (1.2.3)
+>>>>>>> 914de6e00246aa0d109fd1ffa6f97b9eb6c702ed
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -231,7 +235,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
+    sqlite3 (1.3.13)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
