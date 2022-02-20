@@ -17,6 +17,7 @@
           <th>Nickname</th>
           <th></th>
           <th></th>
+          <th></th>
           <th>UserInfo</th>
         </tr>
       </thead>
@@ -28,10 +29,14 @@
             <td>フォロー数: <%= user.followings.count %></td>
             <td>フォロワー数: <%= user.followers.count %></td>
             <td>
-              <% if current_user.following?(user) %>
-                <%= link_to "フォロー解除", user_relationship_path(user, user.id), method: :delete, class: "btn btn-danger" %>
+              <% unless current_user == user %>
+                <% if current_user.following?(user) %>
+                  <%= link_to "フォロー解除", user_relationship_path(user, user.id), method: :delete, class: "btn btn-danger" %>
+                <% else %>
+                  <%= link_to "フォローする", user_relationships_path(user), method: :post, class: "btn btn-primary" %>
+                <% end %>
               <% else %>
-                <%= link_to "フォローする", user_relationships_path(user), method: :post, class: "btn btn-primary" %>
+                <%= link_to "マイページへ", user_path(current_user), class: "btn btn-default btn-success" %>
               <% end %>
             </td>
             <td><%= link_to 'Show', user, class: "user_#{user.id}" %></td>
