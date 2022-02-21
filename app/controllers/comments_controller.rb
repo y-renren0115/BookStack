@@ -8,14 +8,14 @@ class CommentsController < ApplicationController
     if @comment.save
       flash[:success] = "Comment was successfully created."
     end
-    redirect_to request.referer
+    # redirect_to request.referer
   end
 
   def destroy
     @book = Book.find(params[:book_id])
     comment = current_user.comments.find_by(id: params[:id], book_id: @book.id)
     comment.destroy
-    redirect_to request.referer
+    # redirect_to request.referer
   end
 
   private

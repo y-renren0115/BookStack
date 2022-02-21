@@ -29,17 +29,7 @@
           </td>
           <td><%= link_to book.title,book, class: "book_#{book.id}" %></td>
           <td><%= book.contents %></td>
-          <td>
-            <% if book.favorited_by?(current_user) %>
-              <%= link_to book_likes_path(book), method: :delete do %>
-                <span class="glyphicon glyphicon-heart"><%= book.likes.count%></span>
-              <% end %>
-            <% else %>
-              <%= link_to book_likes_path(book), method: :post do %>
-                <span class="glyphicon glyphicon-heart-empty"><%= book.likes.count %></span>
-              <% end %>
-            <% end %>
-          </td>
+          <td id="like_buttons_<%= book.id %>"><%= render "likes/likes", book: book %></td>
           <td>Comment：<%= book.comments.count %></td>
         </tr>
       <% end %>
