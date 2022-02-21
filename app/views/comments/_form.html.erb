@@ -1,0 +1,7 @@
+<%= form_with model:[book, comment] do |f| %>
+  <%= f.label  :CommentArea %>
+  <br>
+  <%= f.text_area :comment, size: "120x5" %>
+  <br>
+  <%= f.submit 'SEND', class: "btn-sm btn-primary" %>
+<% end %>
