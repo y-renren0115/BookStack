@@ -69,6 +69,10 @@ group :production do
   gem 'pg'
 end
 
+group :production do
+  gem 'rails_12factor'
+end
+
 # ImportGem↓
 
 gem 'pry-byebug'
