@@ -32,6 +32,7 @@
           </ul>
         </nav>
         <!--検索フォーム-->
+        <% unless current_page?(root_path) %>
         <% if user_signed_in? %>
         <div class="search-form">
           <%= form_with url: search_path, local: true, method: :get do |f| %>
@@ -41,6 +42,7 @@
             <%= f.submit "検索", class: "btn btn-info" %>
           <% end %>
         </div>
+        <% end %>
         <% end %>
       </div>
     </header>
